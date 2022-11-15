@@ -46,7 +46,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: infinite 2s linear infinite;
+  animation: infinite 5s linear infinite;
 
 }
 @keyframes infinite{
@@ -58,6 +58,7 @@
   }
 }
 .section-two {
+  background-color: #f5f7f4;
   min-height: 100vh;
   height: max-content;
   display: block;
