@@ -24,42 +24,40 @@
 
   -ms-overflow-style: none; 
   scrollbar-width: none; 
+  scroll-behavior: smooth;
 }
 
 .background {
-  width: 30vw;
-  height: auto;
+  height: 80vh;
+  width: auto;
 }
-
-
 
 .container {
   height: 100vh;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 }
 
 .section-one {
-  background: url(/asset/graphic/banner.jpg) repeat-y;
-  background-size: cover;
-  background-position:center;
+  background: url(/asset/graphic/banner.jpg);
+  background-size: auto 100%;
+  background-repeat: repeat;
   scroll-snap-align: start;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: infinite 10s linear infinite;
+  animation: infinite 2s linear infinite;
+
 }
 @keyframes infinite{
   0%{
-    background-position: 50% 0;
+    background-position: 0 0vh;
   }
   100%{
-    background-position: 50% 1970px;
+    background-position: 0 100vh;
   }
 }
 .section-two {
-  scroll-snap-align: start;
   min-height: 100vh;
   height: max-content;
   display: block;
